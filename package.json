@@ -1,0 +1,13 @@
+{
+  "name": "simple_blog",
+  "private": true,
+  "dependencies": {},
+  "auto-rename-tag.activationOnLanguage": [
+    "html",
+    "xml",
+    "php",
+    "javascript",
+    "erb",
+    "rb"
+  ]
+}
