@@ -1,6 +1,9 @@
 class UsersController < ApplicationController
-
+    
     def new
+        validate :password, :presence =>true, :confirmation =>true
+        validates_confirmation_of :password
+
         @user = User.new
     end
 

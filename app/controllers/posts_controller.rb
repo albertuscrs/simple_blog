@@ -3,6 +3,7 @@ class PostsController < ApplicationController
     before_action :require_user, only: [:index, :show]
     def index
         @posts = Post.all
+        #@post = Post.find(params[:post_id])
     end
 
     def show
@@ -45,6 +46,6 @@ class PostsController < ApplicationController
     end
 
     private def post_params
-        params.require(:post).permit(:title,:body)
+        params.require(:post).permit(:title,:body).merge(user_id: current_user.id)
     end
 end
