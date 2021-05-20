@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.5.0'
 
 #use nokogiri for xml
-gem 'nokogiri', '~> 1.10.4'
+gem 'nokogiri', '~> 1.11.4'
 #use kaminari for paginating feature
 gem 'kaminari'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
